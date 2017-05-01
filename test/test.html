@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FileDrop Test</title>
+
+    <script>
+        require('angular')
+            .module('testApp', [require('../src/filedrop')])
+            .config([function(FileDropConfig) {
+                FileDropConfig.setOptions({
+                    dragAndDrop: false,
+                })
+            }]).run([function () {
+
+        }])
+    </script>
+</head>
+<body>
+
+</body>
+</html>
